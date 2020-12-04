@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Naruto Uzumaki</title>
+		<style>
+
+			body {
+				margin: 0;
+				font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+				background-color: #e9820d;
+				line-height: 1.5;
+			}
+
+			nav, main > section {
+				overflow: auto;
+			}
+
+			main > section, main > footer {
+				min-height: 100vh;
+			}
+
+			#nav {
+				justify-content: space-even;
+				align-items: baseline;
+				padding: 2em;
+				background-color: #e7760d;
+				color: #eee;
+				display: flex;
+			}
+
+			nav h1, ul {
+				margin: 0
+			}
+
+			nav a {
+				text-decoration: none;
+				color: #eee;
+			}
+
+			nav ul {
+				display: flex;
+				list-style: none;
+			}
+
+			nav ul a {
+				padding: 1.5em;
+				color: white;
+			}
+
+			nav ul a:hover {
+				color: #f09436;
+			}
+
+			#naruto_1 {
+				background-color: #26B63E;
+				background-image: url(images/naruto1.jpg);
+				background-size: cover;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				font-size: 4em;
+				color: #fff;
+			}
+
+			#naruto_1 > div {
+				position: relative;
+				left: -120px;
+				top: 120px;
+			}
+
+			#naruto_1 h2, #naruto_1 p {
+				margin: 0;
+				text-shadow: 0 0 20px #000000;
+			}
+
+
+			/* Create some cards in this section */
+			#naruto_2 {
+				background-color: #ffffff;
+			}
+
+			#naruto_2 > .div{
+			height: 350px;
+			width: 250px;
+			background-color: white;
+			text-align: center;
+			margin: 15px;
+			display: inline-block;
+			border: 1px solid #ccc;
+			box-shadow: 0px 5px 25px #aaa;
+			border-radius: 10px;
+			}
+
+
+
+			#naruto_3 {
+				background-color: #bd5b1b;
+				background-image: url(images/naruto_background3.png);
+				background-size: cover;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+
+			#naruto_3 > div {
+				background-color:rgba(255, 255, 255, 0.65);
+				padding: 2em;
+				width: 75%;
+				max-width: 700px;
+			}
+
+			#naruto_3  h2 {
+				font-size: 4em;
+				margin: 0 0 1rem 0;
+				text-align: center;
+			}
+
+
+			/* Style this */
+			#naruto_4 {
+				background-color: #461c3b;
+				display: flex;
+				color: #26323f;
+				background-image: url(images/naruto_background2.png);
+				background-size: cover;
+			}
+
+			#naruto_4 > div {
+				display: flex;
+				justify-content: center;
+				width: 75%;
+				margin: auto;
+			}
+
+			#naruto_4 h2, #naruto_5 p {
+				margin: 0 0 1rem 0;
+			}
+
+			#naruto_4 h2 {
+				font-size: 2em;
+			}
+
+			#naruto_4 > div > div:nth-child(1) {
+				flex: 3;
+				margin: 0 2em 0 0;
+			}
+
+			#naruto_4 > div > div:nth-child(2) {
+				flex: 2;
+			}
+
+			#naruto_4 > div img {
+				width: 100%;
+				box-shadow:0 0 22px rgba(0, 0, 0, 0.44);
+			}
+
+
+            #naruto_5 {
+				background-color: #461c3b;
+				display: flex;
+                color: #000000;
+				background-image: url(images/naruto_background5.png);
+				background-size: cover;
+			}
+
+			#naruto_5 > div {
+				display: flex;
+				justify-content: center;
+				width: 75%;
+				margin: auto;
+			}
+
+			#naruto_4 h2, #naruto_5 p {
+				margin: 0 0 1rem 0;
+			}
+
+			#naruto_5 h2 {
+				font-size: 2em;
+			}
+
+			#naruto_5 > div > div:nth-child(1) {
+				flex: 3;
+				margin: 0 2em 0 0;
+			}
+
+			#naruto_5 > div > div:nth-child(2) {
+				flex: 2;
+			}
+
+			#naruto_5 > div img {
+				width: 100%;
+				box-shadow:0 0 22px rgba(0, 0, 0, 0.44);
+			}
+
+
+			#contact {
+				background-color: #ec9f0e;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+			}
+
+			#contact > form {
+				display: flex;
+			}
+
+			#contact > form > div {
+				display: flex;
+				flex-direction: column;
+			}
+
+			#contact label {
+				display: flex;
+				flex-direction: column;
+			}
+
+			label {
+				margin: 1em 0;
+			}
+
+			label span {
+				margin: 1em 0;
+			}
+
+			input, textarea {
+				border: 1px solid #000;
+				padding: 0.5em;
+				margin: 0 2em 0 0;
+				width: 20em;
+				font-size: 1em;
+			}
+
+			textarea {
+				height: 9em;
+				margin: 0 0 0 0;
+			}
+
+			form button {
+				width: auto;
+				font-size: 1em;
+				margin: 1em 0;
+				align-self: flex-end;
+				padding: 0.5em 1em;
+				background-color:rgb(0, 0, 0);
+				color: #fff;
+				border: none;
+			}
+		</style>
+	</head>
+	<body>
+
+		<main>
+			<nav id="nav">
+				<h1><a href="#">Entreprenuer Spotlight</a></h1>
+				<ul>
+					<li><a href="#naruto_1">Naruto</a></li>
+					<li><a href="#naruto_2">Another Naruto</a></li>
+					<li><a href="#naruto_3">Again Naruto</a></li>
+                    <li><a href="#naruto_4">One More Naruto</a></li>
+                    <li><a href="#naruto_5">I Promise This Is The Last Naruto</a></li>
+				</ul>
+			</nav>
+		
+
+
+			<section id="naruto_1">
+				<div>
+					<h2></h2>
+					<p></p>
+				</div>
+			</section>
+		
+
+
+			<section id="naruto_2">
+				<div class="row">
+					<div class="col-md-3 flex-item" >
+					   <img src="images/naruto3.jpeg" class="Naruto Uzumaki" style="margin-bottom:5px; margin-top:10px; border-radius:250px;">
+					   <legend>Section</legend> 
+					   <p>Lorem ipsum dolor sit amet glo dlbogn</p>
+					   <button class="btn btn-success btn-sm" style="float:right;" >Read More</button>
+					</div>
+					<div class="col-md-3 flex-item" >
+						<img src="images/naruto6.jpeg" class="img img-responsive" style="margin-bottom:5px; margin-top:10px; border-radius:250px;">
+						<legend>Section</legend>
+						 <p>Lorem ipsum dolor sit amet glo dlbogn</p>
+						 <button class="btn btn-success btn-sm" style="float:right;" >Read More</button>
+					 </div>
+					 <div class="col-md-3 flex-item" >
+						<img src="images/naruto5.jpeg" class="img img-responsive" style="margin-bottom:5px; margin-top:10px; border-radius:250px;">
+						<legend>Section</legend>
+						<p>Lorem ipsum dolor sit amet glo dlbogn</p>
+						<button class="btn btn-success btn-sm" style="float:right;" >Read More</button>
+					 </div>
+				  </div>
+				  
+				  
+			</section>
+		
+
+
+			<section id="naruto_3">
+				<div>
+					<h2>Naruto Uzumaki</h2>
+					<p>
+						The story of Naruto started in the early year of 2002 and concluded on 2017. You can read the full story here <a href="https://naruto.fandom.com/wiki/Plot_of_Naruto">here</a>
+
+					</p>
+				</div>
+            </section>
+            
+			
+			
+            <section id="naruto_4">
+				<div>
+					<h2>Naruto Uzumaki</h2>
+					<p>
+						Lorem ipsum is a name for a common type of placeholder text. Also known as filler or dummy text, this is simply copy that serves to fill a space without actually saying anything meaningful. ... Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  	
+                    </p>
+				</div>
+			</section>
+		
+
+
+			<section id="naruto_5">
+				<div>
+					<div>
+						<h2>Naruto Uzumaki</h2>
+						<p>
+							Lorem ipsum is a name for a common type of placeholder text. Also known as filler or dummy text, this is simply copy that serves to fill a space without actually saying anything meaningful. ... Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+						</p>
+					</div>
+
+				</div>
+				<figure>
+					<img>
+				</figure>
+			</section>
+		
+
+
+			<footer id="contact">
+				<h2>Contact Us</h2>
+				<h3>A VIDEO THAT HAS ABSOLUTELY NOTHING TO DO WITH THE WORK, ENJOY!!!!</h3>
+				<iframe width="420" height="315"
+				src="https://www.youtube.com/embed/tgbNymZ7vqY">
+				</iframe>
+
+</iframe>
+				<form>
+					<div>
+						<label>
+							<span>Name</span>
+							<input type="text">
+						</label>
+			
+						<label>
+							<span>Email</span>
+							<input type="email">
+						</label>
+					</div>
+					<div>
+						<label>
+							<span>Message</span>
+							<textarea></textarea>
+						</label>
+						<button type="submit">Send</button>
+					</div>
+				</form>
+			</footer>
+		</main>
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!---
+
+  <div class="flex-container">
+	<div class="row">
+	   <div class="col-md-3 flex-item" >
+		  <img src="bg.jpg" class="img img-responsive" style="margin-bottom:5px; margin-top:10px; border-radius:250px;">
+		  <legend>Section</legend> 
+		  <p>Lorem ipsum dolor sit amet glo dlbogn</p>
+		  <button class="btn btn-success btn-sm" style="float:right;" >Read More</button>
+	   </div>
+	   <div class="col-md-3 flex-item" >
+		  <img src="bg.jpg" class="img img-responsive" style="margin-bottom:5px; margin-top:10px; border-radius:250px;">
+		  <legend>Section</legend>
+		   <p>Lorem ipsum dolor sit amet glo dlbogn</p>
+		   <button class="btn btn-success btn-sm" style="float:right;" >Read More</button>
+	   </div>
+	   <div class="col-md-3 flex-item" >
+		  <img src="bg.jpg" class="img img-responsive" style="margin-bottom:5px; margin-top:10px; border-radius:250px;">
+		  <legend>Section</legend>
+		  <p>Lorem ipsum dolor sit amet glo dlbogn</p>
+		  <button class="btn btn-success btn-sm" style="float:right;" >Read More</button>
+	   </div>
+	</div>
+ </div>
+
+-->
